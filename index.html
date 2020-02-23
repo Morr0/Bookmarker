@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form id="bookmarkFolderInput">
+            <label>Folder name</label>
+            <input type="text" id="bookmarkFolderName" placeholder="Enter folder name">
+            <button type="button" id="folderAdd" onclick="addFolder()">Add folder</button>
+        </form>
+        <form id="bookmarkInput">
+            <label>Bookmark Name</label>
+            <input type="text" id="bookmarkName" placeholder="Enter name">
+            <label>Bookmark URL</label>
+            <input type="text" id="bookmarkURL" placeholder="Enter URL">
+            <label>Select Folder</label>
+            <select id="bookmarkFolder" >
+                <option value="root" selected>Home</option>
+            </select>
+            <button type="button" id="bookmark" onclick="Bookmark()" value="Bookmark">Bookmark</button>
+        </form>
+
+        <div id="bookmarks">
+
+        </div>
+        
+        <script src="js/bookmark.js"></script>
+    </body>
+</html>
